@@ -1,0 +1,38 @@
+form {
+	border-style: groove;
+	border-color: rgb(255, 164, 114);
+	border-width: 7px;
+	background-color: rgb(255, 201, 157);
+	background-size: contain;
+}
+
+fieldset {
+	width 50%;
+	margin: auto 50% auto auto
+}
+
+html {
+	background-size: contain;
+	background-color: rgb(255, 126, 38);
+	align-content: center;
+}
+
+h1 {
+	width: fit-content;
+	margin: 5px;
+	border-style: ridge;
+	border-width: 4px;
+	border-color: #6CB4EE;
+	background-color: rgb(0, 127, 255, 0.6);
+	font-size: 100%;
+	font-weight: normal;
+}
+
+input {
+	width: 100%;
+}
+
+p {
+	display: inline-block;
+	block
+}

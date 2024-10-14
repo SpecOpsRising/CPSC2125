@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Asignment 6</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			
+			<label for = "lname"><h1>Last Name:</h1></label>
+			<input type = "text" id = "lname" name = "lname" required><br><br>
+			
+			<label for = "fname"><h1>First Name:</h1></label><br>
+			<input type = "text" id = "fname" name = "fname" required><br><br>
+			
+			<label for = "state"><h1>State:</h1></label>
+				<select id = "state" name = "state">
+					<option value = "al" selected>AL</option>
+					<option value = "ga">GA</option>
+					<option value = "fl">FL</option>
+				</select><br><br>
+			
+			<label for = "em"><h1>Email:</h1></label>
+			<input type = "email" id = "em" name = "em" required><br><br>
+			
+			<label for = "pwd"><h1>Password:</h1></label>
+			<input type = "password" id = "pwd" name = "pwd" required><br><br>
+			
+			<label for = "bio"><h1>Bio:</h1></label>
+			<textarea name = "bio" rows = "5" cols = "10"></textarea><br><br>
+		</fieldset>
+		<fieldset>
+			<legend>Preferences</legend>
+			<label for = "favcolor"><h1>Favorite Color:</h1></label>
+			<input type = "color" id = "favcolor" name = "favcolor" required><br><br>
+			
+			<label for = "DOB"><h1>Date of Birth:</h1></label>
+			<input type = "date" id = "DOB" name = "DOB" required><br><br>
+			
+			<label for = "resume"><h1>Upload Resume PDF:</h1></label>
+			<input type = "file" id "resume" name = "resume"><br><br>
+			
+			<label for = "rating"><h1>Rate Our Service:</h1></label>
+			<input type = "range" id = "rating" name = "rating" value = "5" min = "0" max = "10" oninput = "oVal.value = this.nextElementSibling.value = this.value"><br>
+			<output name = "oVal" for = "rating">5</output><br>
+			
+		</fieldset>
+		<fieldset>
+			<legend>Other Inputs</legend>
+			<label for = "news"><h1>Newsletter:</h1></label>
+			<input type = "checkbox" id = "news" name = "news" value = "Newsletter">
+			
+			<label for = "vol"><h1>Volunteer:</h1></label>
+			<input type = "checkbox" id = "vol" name = "vol" value = "Volunteer"><br><br>
+			
+			<label><h1>Option 1:</h1></label> <input type = "radio" id = "option_1" name = "radio-choices" value = "option_1">
+			<label><h1>Option 2:</h1></label> <input type = "radio" id = "option_2" name = "radio-choices" value = "option_2"><br><br>
+			
+			<label>Hidden Input:</label>
+		</fieldset>
+		<input type = "submit" value = "submit" style = "width: 50%;">
+		<input type = "reset" value = "reset" style = "width: 50%;">
+	</form>
+</body>
+</html>
