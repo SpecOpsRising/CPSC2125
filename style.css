@@ -1,36 +1,159 @@
-form {
+grid-container {
+	margin: auto;
+	float: center;
+	width: 90%;
+	background-color: rgb(41,41,41, 0.6);
+	background-size: contain;
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	grid-template-areas:
+	"header header header"
+	"nav main aside"
+	"footer footer footer";
+}
+
+aside {
 	border-style: groove;
-	border-color: rgb(255, 164, 114);
-	border-width: 7px;
-	background-color: rgb(255, 201, 157);
+	border-width: 5px;
+	border-color: #418c00;
 	background-size: contain;
+	background-color: #171500;
+	padding: auto;
+	grid-area: aside;
 }
 
-fieldset {
-	margin: auto 50% auto auto;
-}
-
-html {
+footer {
+	padding: 20px;
+	margin: auto max-width auto max-width;
+	background-color: #00043b;
 	background-size: contain;
-	background-color: rgb(255, 126, 38);
-	align-content: center;
+	grid-area: footer;
 }
 
 h1 {
-	width: fit-content;
-	margin: 5px;
-	border-style: ridge;
-	border-width: 4px;
-	border-color: #6CB4EE;
-	background-color: rgb(0, 127, 255, 0.6);
-	font-size: 100%;
-	font-weight: normal;
+	margin: 10px;
+	border-style: outset;
+	border-width: 7px;
+	border-color: #418c00;/*#9fff4d*/
+	background-size: contain;
+	background-color: #275400;
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
 }
 
-input {
-	width: 100%;
+h2{
+	margin: 6px;
+	border-style: groove;
+	border-width: 7px;
+	border-color: #ccbb50;
+	background-size: contain;
+	background-color: rgb(204, 187, 80, 0.3);
+	text-align: center;
+	color: #5ead2a /*#5ac1db*/;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+header {
+	padding: 20px;
+	margin: auto max-width auto max-width;
+	background-color: #00043b;
+	background-size: contain;
+	grid-area: header;
+}
+
+html {
+	background-image: url(images/spacebackground.jpg);
+	background-position: top left;
+	background-size: inherit;
+	background-color: black;
+	background-repeat: repeat;
+	align-content: center;
+}
+
+img {
+	margin: auto;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: center;
+	max-height: 300px;
+	max-width: 200px;
+}
+
+label {
+	color: limegreen;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+main {
+	background-size: contain;
+	background-color: #000980;
+	align-content: center;
+	align-items: center;
+	padding: auto;
+	padding-top: 10px;
+	grid-area: main;
+}
+
+nav {
+	border-style: groove;
+	border-width: 5px;
+	border-color: #418c00;
+	background-size: contain;
+	background-color: #171500;
+	padding: auto;
+	grid-area: nav;
 }
 
 p {
-	display: inline-block;
+	margin: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 80%;
+	float: center;
+	border-style: outset;
+	border-width: 3px;
+	border-color: #5ead2a;
+	background-color: rgb(51, 94, 22, 0.4);
+	text-align: center;
+	font-size: 150%;
+	color: #5ead2a;
+}
+
+section2 {
+	border-style: groove;
+	border-width: 5px;
+	border-color: #c74c00;
+	background-image: url(images/mario-funny.jpg);
+	background-size: contain;
+	background-color: #171500;
+	padding: auto;
+	grid-area: section;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*Alternate media*/
+@media screen and (max-width: 900px){
+	grid-container {
+	margin: auto;
+	float: center;
+	width: 100%;
+	background-color: rgb(41,41,41, 0.6);
+	background-size: contain;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas:
+	"header"
+	"nav"
+	"main"
+	"aside"
+	"footer";
+	}
 }
