@@ -1,97 +1,35 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<title>Asignment 7</title>
-	<script type = "text/javascript">
-		function TestButton()
-		{
-			let f1 = document.getElementById("fs1").value;
-			let f1I1 = document.getElementById("lname").value;
-			let f1I2 = document.getElementById("fname").value;
-			let f1I3 = document.getElementById("state").value;
-			let f1I4 = document.getElementById("em").value;
-			let f1I5 = document.getElementById("pwd").value;
-			let f1I6 = document.getElementById("bio").value;
-			let f2 = document.getElementById("fs2").value;
-			let f2I1 = document.getElementById("favcolor").value;
-			let f2I2 = document.getElementById("DOB").value;
-			let f2I3 = document.getElementById("rsme").value;
-			let f2I4 = document.getElementById("rating").value;
-			let f3 = document.getElementById("fs3").value;
-			let f3I1 = document.getElementById("news").value;
-			let f3I2 = document.getElementById("vol").value;
-			let f3I3 = document.getElementById("option_1").value;
-			let f3I4 = document.getElementById("option_2").value;
-			let info = "Your Info:<br>" + f1 + "<br>" + f1I1 + "<br>" + f1I2 + "<br>" + f1I3 + "<br>" + f1I4 + "<br>" + f1I5 + "<br>" + f1I6 + "<br>" + f2 + "<br>" + f2I1 + "<br>" + f2I2 + "<br>" + f2I3 + "<br>" + f2I4 + "<br>" + f3 + "<br>" + f3I1 + "<br>" + f3I2 + "<br>" + f3I3 + "<br>" + f3I4;
-			document.getElementById("forminfo").innerHTML = info;
-		}
-	</script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Asignment 8</title>
 </head>
 
 <body>
-	<form id = "form1">
-		<fieldset id = "fs1">
-			<legend>Personal Information</legend>
-			
-			<label for="lname">Last Name:</label>
-			<input type = "text" id="lname" name="lname" value = "Falls" required><br><br>
-			
-			<label for="fname">First Name:</label>
-			<input type = "text" id="fname" name="fname" value = "Jonathan" required><br><br>
-			
-			<label for="state">State:</label>
-				<select id = "state" name = "state">
-					<option value = "al" selected>AL</option>
-					<option value = "ga">GA</option>
-					<option value = "fl">FL</option>
-				</select><br><br>
-			
-			<label for="em">Email:</label>
-			<input type = "email" id="em" name="em" value = "cadet@gm" required><br><br>
-			
-			<label for="pwd">Password:</label>
-			<input type = "password" id="pwd" name="pwd" value = "123456" required><br><br>
-			
-			<label for="bio">Bio:</label>
-			<textarea id="bio" name="bio" rows = "5" cols = "10"></textarea><br><br>
-		</fieldset>
-		<fieldset id = "fs2">
-			<legend>Preferences</legend>
-			<label for="favcolor">Favorite Color:</label>
-			<input type = "color" id="favcolor" name="favcolor"><br><br>
-			
-			<label for="DOB">Date of Birth:</label>
-			<input type = "date" id="DOB" name="DOB"><br><br>
-			
-			<label for = "rsme">Upload Resume PDF:</label>
-			<input type = "file" id="rsme" name="rsme"><br><br>
-			
-			<label for = "rating">Rate Our Service:</label>
-			<input type = "range" id = "rating" name = "rating" value = "5" min = "0" max = "10" oninput = "oVal.value = this.nextElementSibling.value = this.value"><br>
-			<output name = "oVal" for = "rating">5</output><br>
-			
-		</fieldset>
-		<fieldset id = "fs3">
-			<legend>Other Inputs</legend>
-			<label for="news">Newsletter:</label>
-			<input type = "checkbox" id="news" name="news" value="Newsletter">
-			
-			<label for="vol">Volunteer:</label>
-			<input type = "checkbox" id="vol" name="vol" value="Volunteer"><br><br>
-			
-			<label>Option 1:</label> <input type = "radio" id="option_1" name="radio-choices" value="option_1">
-			<label>Option 2:</label> <input type = "radio" id="option_2" name="radio-choices" value="option_2"><br><br>
-			
-			<label>Hidden Input:</label>
-		</fieldset>
-		<input type = "submit" value = "submit" style = "width: 50%;">
-		<input type = "reset" value = "reset" style = "width: 50%;">
-		
-		<button type = "button" onclick = "TestButton();" style = "width: 50%;">Test</button>
-	</form>
-	<p id = "forminfo" value = "Text appears here"></p>
+	<grid-container>
+	<header><h1>Responsible and Accessible Design</h1></header>
+	<nav>
+		<ul>
+			<li><p><a href = "https://www.columbusstate.edu" tabindex = "1">Columbus State University Home Page</a></p></li>
+			<li><p><a href = "https://www.w3.org/TR/WCAG21/" tabindex = "2">Web Accessibility Standards Page</a></p></li>
+			<li><p><a href = "https://responsivedesignchecker.com" tabindex = "3">Responsive Web Design Checker</a></p></li>
+		</ul>
+	</nav>
+	<main>
+	<img src = "images\AI-Arcade_Machine.jpg" alt = "An AI generated pixel art image of an arcade machine."/>
+	</main>
+	<aside>
+		<svg viewBox="0 0 150 150" width="400" height = "200">
+			<ellipse rx ="100" ry ="50" cx ="80" cy ="80" fill="black" stroke="limegreen" stroke-width="5"/>
+			<text font-size="25pt" x="50" y="85" fill="darkblue" stroke="limegreen">cool</text>
+			An ellipse with the text cool inside of it.
+		</svg>
+	</aside>
+	<footer>
+	<h1>Jonathan Falls, Falls 2024</h1>
+	</footer>
+	</grid-container>
 </body>
 </html>
