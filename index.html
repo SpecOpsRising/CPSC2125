@@ -1,35 +1,108 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<title>Asignment 8</title>
+	<title>Assignment 9</title>
+	<meta charset= "utf-8"/>
+	<meta name = "viewport" content = "width = device-width, initial-scale =1"/>
+	<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel = "stylesheet"/>
+	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-	<grid-container>
-	<header><h1>Responsible and Accessible Design</h1></header>
-	<nav>
-		<ul>
-			<li><p><a href = "https://www.columbusstate.edu" tabindex = "1">Columbus State University Home Page</a></p></li>
-			<li><p><a href = "https://www.w3.org/TR/WCAG21/" tabindex = "2">Web Accessibility Standards Page</a></p></li>
-			<li><p><a href = "https://responsivedesignchecker.com" tabindex = "3">Responsive Web Design Checker</a></p></li>
-		</ul>
-	</nav>
-	<main>
-	<img src = "images\AI-Arcade_Machine.jpg" alt = "An AI generated pixel art image of an arcade machine."/>
-	</main>
-	<aside>
-		<svg viewBox="0 0 150 150" width="400" height = "200">
-			<ellipse rx ="100" ry ="50" cx ="80" cy ="80" fill="black" stroke="limegreen" stroke-width="5"/>
-			<text font-size="25pt" x="50" y="85" fill="darkblue" stroke="limegreen">cool</text>
-			An ellipse with the text cool inside of it.
-		</svg>
-	</aside>
-	<footer>
-	<h1>Jonathan Falls, Falls 2024</h1>
-	</footer>
-	</grid-container>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm bg-primary text-white p-5">
+			Header
+			</div>
+		</div>
+		<div class = "row">
+			<nav class = "navbar navbar-expand-md navbar-dark bg-dark ">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="https://gameprogrammingpatterns.com" target = "_blank">Website 1</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Website 2</a>
+							</li>
+						</ul>
+						<form class="d-flex">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class = "row">
+			<div class = "col-sm-6 bg-primary text-white p-5">
+				Main 1
+				<table class = "table table-hover table-striped table-dark table-bordered border-white">
+					<thead>
+						<tr>
+						<td>Purpose</td><td>Scope</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<td>Game Design Patterns</td><td>Programming</td>
+						</tr>
+						<tr>
+						<td>Game Design Practices</td><td>Planning/Structure</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class = "col-sm-6 bg-dark text-white p-5">
+				Main 2
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images\Galaga_ship.png" class="d-block w-auto mx-auto" style="height:225px" alt="Pixelated Space Ship"/>
+						</div>
+						<div class="carousel-item">
+							<img src="images\Game_Code_example.png.webp" class="d-block w-auto mx-auto" style="height:225px" alt="Video Game Code Example"/>
+						</div>
+						<div class="carousel-item">
+							<img src="images\Pong_Arcade_Pic.jpg" class="d-block w-auto mx-auto" style="height:225px" alt="Pong Arcade Machine"/>
+						</div>
+						<div class="carousel-item">
+							<img src="images\Pong_Game_Pic.png" class="d-block w-auto mx-auto" style="height:225px" alt="Classic Pong Video Game Image"/>
+						</div>
+						<div class="carousel-item">
+							<img src="images\Snake_Game_Pic.png" class="d-block w-auto mx-auto" style="height:225px" alt="Snake Video Game Image"/>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-sm bg-primary text-white p-5">
+				Footer
+			</div>
+		</div>
+	</div>
 </body>
 </html>
